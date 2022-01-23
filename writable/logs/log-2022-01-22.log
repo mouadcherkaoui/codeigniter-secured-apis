@@ -1,0 +1,94 @@
+CRITICAL - 2022-01-22 03:36:55 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 03:41:40 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-22 07:57:58 --> {0} filter must have a matching alias defined.
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(380): CodeIgniter\Filters\Filters->enableFilter()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-01-22 07:59:18 --> Expired token
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\app\Controllers\UserController.php(172): Firebase\JWT\JWT::decode()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\UserController->details()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-01-22 08:00:10 --> Call to a member function setStatusCode() on null
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\Authorization->before()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(389): CodeIgniter\Filters\Filters->run()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#5 {main}
+ERROR - 2022-01-22 09:40:31 --> Failed to open the referenced table 'clubs'
+ERROR - 2022-01-22 09:45:48 --> Failed to open the referenced table 'leagues'
+ERROR - 2022-01-22 09:46:29 --> Failed to open the referenced table 'leagues'
+ERROR - 2022-01-22 09:47:09 --> Referencing column 'region_id' and referenced column 'region_id' in foreign key constraint 'leagues_region_id_foreign' are incompatible.
+CRITICAL - 2022-01-22 09:58:16 --> Access level to App\Database\Migrations\AddLeague::$db must be protected (as in class CodeIgniter\Database\Migration) or weaker
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-01-22 10:06:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	CONSTRAINT `pk_inscriptions` PRIMARY KEY(`inscription_id`),
+' at line 5
+ERROR - 2022-01-22 10:10:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	CONSTRAINT `pk_inscriptions` PRIMARY KEY(`inscription_id`),
+' at line 5
+ERROR - 2022-01-22 10:11:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	CONSTRAINT `pk_inscriptions` PRIMARY KEY(`inscription_id`),
+' at line 5
+ERROR - 2022-01-22 10:13:26 --> Referencing column 'trainee_id' and referenced column 'trainee_id' in foreign key constraint 'inscriptions_trainee_id_foreign' are incompatible.
+ERROR - 2022-01-22 10:14:18 --> Referencing column 'trainee_id' and referenced column 'trainee_id' in foreign key constraint 'inscriptions_trainee_id_foreign' are incompatible.
+ERROR - 2022-01-22 10:16:18 --> Referencing column 'trainee_id' and referenced column 'trainee_id' in foreign key constraint 'inscriptions_trainee_id_foreign' are incompatible.
+ERROR - 2022-01-22 11:11:29 --> Referencing column 'trainee_id' and referenced column 'trainee_id' in foreign key constraint 'inscriptions_trainee_id_foreign' are incompatible.
+CRITICAL - 2022-01-22 11:58:54 --> json_decode(): Argument #1 ($json) must be of type string, stdClass given
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\app\Controllers\TraineeAPI.php(24): json_decode()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\TraineeAPI->create()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-01-22 12:00:59 --> Cannot use object of type stdClass as array
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\TraineeAPI->create()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-01-22 12:01:16 --> Cannot access offset of type string on string
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\TraineeAPI->create()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-01-22 12:01:38 --> Attempt to read property "trainee_id" on string
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\app\Controllers\TraineeAPI.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\TraineeAPI->create()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-01-22 18:11:58 --> Call to undefined method App\Models\Region::doFindAll
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\app\Controllers\RegionAPI.php(19): CodeIgniter\Model->__call()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->index()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-01-22 18:14:33 --> Call to undefined method App\Models\Region::doFindAll
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\app\Controllers\RegionAPI.php(19): CodeIgniter\Model->__call()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->index()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
