@@ -4,14 +4,17 @@ namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
 use App\Models\Region;
+use App\Entities\RegionEntity;
 
 class RegionAPI extends ResourceController
 {
     private $regionRepo;
+    private $regionEntity;
     public function __construct()
     {
         $this->request = \Config\Services::request();
         $this->regionRepo = new Region();
+        $this->regionEntity = new RegionEntity($this);
         $region = new Region;        
     }
 
