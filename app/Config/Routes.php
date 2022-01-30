@@ -43,6 +43,11 @@ $routes->group("api", function($r) {
     $r->resource('trainees', [ 'controller' => 'TraineeAPI']);
     $r->resource('trainers', [ 'controller' => 'TrainerAPI', 'filter' => 'jwt-auth']);
     $r->resource('regions', ['controller' => 'RegionAPI', 'filter' => 'jwt-auth']);
+    $r->resource('leagues', ['controller' => 'LeagueAPI', 'filter' => 'jwt-auth']);    
+    $r->resource('personnes', ['controller' => 'PersonneAPI', 'filter' => 'jwt-auth']);    
+    $r->resource('grades', ['controller' => 'GradeAPI', 'filter' => 'jwt-auth']);            
+    $r->resource('typeentites', ['controller' => 'TypeEntiteApi', 'filter' => 'jwt-auth']);                
+    $r->resource('typeactivites', ['controller' => 'TypeActiviteApi', 'filter' => 'jwt-auth']);                    
 });
 
 /*

@@ -1,10 +1,12 @@
 <?php
 
+namespace App\Entities;
+use CodeIgniter\Entity\Entity;
 class RegionEntity  
 {
-    public $id;
-    public $name;
-    public $description;
+    protected $CD_Reg;
+    protected $name;
+    protected $description;
     protected $decorated;
     protected $db;
     public function __construct($decorated){
@@ -17,8 +19,8 @@ class RegionEntity
     }
 
     function sanitize_properties($instance) {
-        $reflection = new ReflectionClass($instance);
-         $properties = $reflection->getProperties(ReflectionProperty::IS_PUBLIC);
+        $reflection = new \ReflectionClass($instance);
+         $properties = $reflection->getProperties(\ReflectionProperty::IS_PUBLIC);
          foreach($properties as $property) {
             $value = $property->getValue($instance);
             $sanitized = filter_var($value, FILTER_SANITIZE_STRING);
@@ -28,7 +30,7 @@ class RegionEntity
     }
     
     function sanitize_body($body) {
-        $iterator = new RecursiveIteratorIterator(new RecursiveArrayIterator($body));	
+        $iterator = new \RecursiveIteratorIterator(new \RecursiveArrayIterator($body));	
          foreach($iterator as $key=>$value) {
             $sanitized = filter_var($value, FILTER_SANITIZE_STRING);
             $body[$key] = $sanitized;

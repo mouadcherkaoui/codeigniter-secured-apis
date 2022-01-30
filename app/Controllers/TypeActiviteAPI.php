@@ -3,29 +3,26 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
-use App\Models\Region;
-use App\Entities\RegionEntity;
+use App\Models\TypeActivite;
 
-class RegionAPI extends ResourceController
+class TypeActiviteAPI extends ResourceController
 {
-    private $regionRepo;
-    private $regionEntity;
+    private $TypeActiviteRepo;
     public function __construct()
     {
         $this->request = \Config\Services::request();
-        $this->regionRepo = new Region();
-        $region = new Region;        
+        $this->TypeActiviteRepo = new TypeActivite();
     }
 
     public function index()
     {
-        $result = $this->regionRepo->findAll();
+        $result = $this->TypeActiviteRepo->findAll();
         return $this->respond($result, 200);
     }
 
     public function show($id = null)
     {
-        $result = $this->regionRepo->where('CD_REG', $id)->first();
+        $result = $this->TypeActiviteRepo->where('id_Type_Activite', $id)->first();
         return $this->respond($result, 200);
     }
 
@@ -42,16 +39,16 @@ class RegionAPI extends ResourceController
         $body = $this->request->getJSON();
 
         $data = [
-            'CD_REG' => $body->CD_REG,
-            "LL_REG" => $body->LL_REG,
-            "LA_REG" => $body->LA_REG,
-            "Actif" => $body->Actif,
+            "id_Type_Activite" => 0,
+            "ActiviteAr" => $body->ActiviteAr,
+            "ActiviteFr" => $body->ActiviteFr,
+            "Actif" => $body->Actif,          
             "DateModification" => $body->DateModification
         ];
         
-        $id = $this->regionRepo->insert($data);
+        $id = $this->TypeActiviteRepo->insert($data);
         if($id) {
-            $data['CD_REG'] = $id;
+            $data['id_Type_Activite'] = $id;
             return $this->respondCreated($data);
         }
         else 
@@ -71,16 +68,16 @@ class RegionAPI extends ResourceController
         $body = $this->request->getJSON();        
 
         $data = [
-            'CD_REG' => $id,
-            "LL_REG" => $body->LL_REG,
-            "LA_REG" => $body->LA_REG,
-            "Actif" => $body->Actif,
+            "id_Type_Activite" => 0,
+            "ActiviteAr" => $body->ActiviteAr,
+            "ActiviteFr" => $body->ActiviteFr,
+            "Actif" => $body->Actif,          
             "DateModification" => $body->DateModification
         ];
 
-        $success = $this->regionRepo->update($id, $data);
+        $success = $this->TypeActiviteRepo->update($id, $data);
         if($success) {
-            $data['CD_REG'] = $id;
+            $data['id_Type_Activite'] = $id;
             return $this->respondUpdated($data);
         }
         else 
@@ -89,9 +86,9 @@ class RegionAPI extends ResourceController
     
     public function delete($id = null)
     {
-        $success = $this->regionRepo->delete($id);
+        $success = $this->TypeActiviteRepo->delete($id);
         if($success) {
-            $data['CD_REG'] = $id;
+            $data['id_Type_Activite'] = $id;
             return $this->respondDeleted($data);
         }
         else 
@@ -99,35 +96,29 @@ class RegionAPI extends ResourceController
     }
     private function getRules() {
         $rules = [
-            "CD_REG" => "required|max_length[2]",
-            "LL_REG" => "required|max_length[35]",
-            "LA_REG" => "required|max_length[35]",
-            "Actif" => "required",
-            "DateModification" => "required"
+            "ActiviteAr" => "required|min_length[6]|max_length[50]",
+            "ActiviteFr" => "required|min_length[6]|max_length[50]",          
+            "Actif" => "required",                        
+            "DateModification" => "required"                      
         ];
 
         $messages = [
-            "CD_REG" => [
-                "required" => "CD_REG name is required",
-                "max_length" => "CD_REG name is not in format"
+            "ActiviteAr" => [
+                "required" => "ActiviteAr is required",
+                "min_length" => "ActiviteAr is not in format"
             ],
-            "LL_REG" => [
-                "required" => "LL_REG description is required",
-                "max_length" => "LL_REG name is not in format"
+            "ActiviteFr" => [
+                "required" => "ActiviteFr is required",
+                "min_length" => "ActiviteFr is not in format"
             ],
-            "LA_REG" => [
-                "required" => "LA_REG description is required",
-                "max_length" => "LA_REG name is not in format"
-            ],
-                        
             "Actif" => [
                 "required" => "Actif is required",
-                "max_length" => "Actif is not in format"
-            ],        
+                "min_length" => "Actif is not in format"
+            ],                           
             "DateModification" => [
                 "required" => "DateModification is required",
-                "max_length" => "DateModification is not in format"
-            ]               
+                "min_length" => "DateModification is not in format"
+            ]                
         ];
 
         return [ 'rules' => $rules, 'messages' => $messages];

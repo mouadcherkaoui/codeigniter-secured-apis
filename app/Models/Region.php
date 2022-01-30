@@ -7,16 +7,18 @@ use CodeIgniter\Model;
 class Region extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'regions';
-    protected $primaryKey       = 'region_id';
+    protected $table            = 'r_reg';
+    protected $primaryKey       = 'CD_REG';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        "name",
-        "description",
+        "Actif",
+        "DateModification",
+        "LA_REG",
+        "LL_REG"
     ];
 
     // Dates

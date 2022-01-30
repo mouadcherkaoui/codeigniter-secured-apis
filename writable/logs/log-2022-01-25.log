@@ -1,0 +1,30 @@
+CRITICAL - 2022-01-25 07:03:28 --> array_push(): Argument #1 ($array) must be of type array, null given
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(100): array_push()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-25 07:04:04 --> array_push(): Argument #1 ($array) must be of type array, null given
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(100): array_push()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-25 07:04:52 --> array_push(): Argument #1 ($array) must be of type array, null given
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(100): array_push()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}

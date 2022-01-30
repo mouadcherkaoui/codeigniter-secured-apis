@@ -4,21 +4,23 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class League extends Model
+class Entite extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'R_League';
-    protected $primaryKey       = 'id_leagues';
+    protected $table            = 'R_Entite';
+    protected $primaryKey       = 'id_Entite';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        "id_league",
-        "leagueAr",
-        "leagueFr",
+        "id_type_entite",            
         "Cd_Reg",
+        "cd_prov",
+        "entiteAr",
+        "entiteFr",
+        "Adresse",            
         "Actif",
         "DateModification"
     ];

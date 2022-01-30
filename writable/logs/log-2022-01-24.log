@@ -1,0 +1,248 @@
+CRITICAL - 2022-01-24 02:11:53 --> Object of class stdClass could not be converted to string
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->from()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-01-24 02:12:40 --> Given object is not an instance of the class this property was declared in
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(24): ReflectionProperty->getValue()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->from()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#7 {main}
+CRITICAL - 2022-01-24 02:13:24 --> Given object is not an instance of the class this property was declared in
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(24): ReflectionProperty->getValue()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->from()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#7 {main}
+CRITICAL - 2022-01-24 02:14:54 --> Given object is not an instance of the class this property was declared in
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(27): ReflectionProperty->getValue()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->from()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#7 {main}
+CRITICAL - 2022-01-24 02:15:37 --> Cannot use object of type stdClass as array
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->from()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-01-24 02:18:46 --> Property stdClass::$region_id does not exist
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(29): ReflectionClass->getProperty()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->from()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#7 {main}
+CRITICAL - 2022-01-24 05:59:25 --> syntax error, unexpected token "}"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(19): CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(805): App\Controllers\RegionAPI->__construct()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->createController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 06:00:42 --> {0} is not a valid rule.
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(24): CodeIgniter\Controller->validate()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(44): App\Controllers\RegionAPI->isValid()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(68): App\Entities\RegionEntity->validate()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#11 {main}
+CRITICAL - 2022-01-24 12:12:03 --> Undefined array key "messges"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(53): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 12:12:12 --> Undefined array key "messages"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(53): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 12:12:48 --> Undefined array key "message"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(53): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 12:13:43 --> Attempt to read property "message" on array
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(53): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 12:14:21 --> Undefined array key "message"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(53): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 18:01:33 --> ReflectionAttribute::newInstance() expects exactly 0 arguments, 2 given
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(89): ReflectionAttribute->newInstance()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 18:02:00 --> Undefined property: App\Libraries\MinLength::$rule_name
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Libraries\MinLength.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(19): App\Libraries\MinLength->__construct()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(89): ReflectionAttribute->newInstance()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-01-24 19:01:25 --> Attribute class "App\Libraries\MaxLength" not found
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(89): ReflectionAttribute->newInstance()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 19:15:47 --> Undefined array key "description"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 19:16:20 --> Undefined array key "description"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 19:17:28 --> Undefined array key "description"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 19:20:15 --> Undefined array key "description"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 19:21:41 --> Undefined array key "description"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 19:25:35 --> Undefined array key "max_length[50}"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(93): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 19:34:07 --> array_push(): Argument #1 ($array) must be of type array, null given
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Libraries\MinLength.php(16): array_push()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(19): App\Libraries\MinLength->__construct()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(88): ReflectionAttribute->newInstance()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#10 {main}
+CRITICAL - 2022-01-24 19:38:48 --> Undefined array key "description"
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(96): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-24 19:48:13 --> Cannot access private property App\Libraries\MaxLength::$rule_name
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(55): App\Entities\RegionEntity->rules()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(66): App\Entities\RegionEntity->validate()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#7 {main}

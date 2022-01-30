@@ -4,21 +4,21 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class League extends Model
+class Province extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'R_League';
-    protected $primaryKey       = 'id_leagues';
+    protected $table            = 'prdvs';
+    protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        "id_league",
-        "leagueAr",
-        "leagueFr",
-        "Cd_Reg",
+        'CD_PROV',
+        'CD_REG',            
+        "LL_PROV",
+        "LA_PROV",
         "Actif",
         "DateModification"
     ];

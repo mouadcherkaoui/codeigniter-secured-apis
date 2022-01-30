@@ -3,20 +3,20 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
-use App\Models\League;
+use App\Models\Entite;
 
-class LeagueAPI extends ResourceController
+class EntiteAPI extends ResourceController
 {
-    private $leagueRepo;
+    private $entiteRepo;
     public function __construct()
     {
         $this->request = \Config\Services::request();
-        $this->leagueRepo = new League();
+        $this->entiteRepo = new Entite();
     }
 
     public function index()
     {
-        $result = $this->leagueRepo->findAll();
+        $result = $this->entiteRepo->findAll();
         $resultToReturn = array();
         foreach($result as $item){
             $formated = $this->formatItem($item);
@@ -27,7 +27,7 @@ class LeagueAPI extends ResourceController
 
     public function show($id = null)
     {
-        $result = $this->leagueRepo->where('id_league', $id)->first();
+        $result = $this->entiteRepo->where('id_Entite', $id)->first();
         if($result != null){
             $resultToReturn = $this->formatItem($result);
             return $this->respond($resultToReturn, 200);            
@@ -48,18 +48,21 @@ class LeagueAPI extends ResourceController
         }
         
         $body = $this->request->getJSON();
-        
+
         $data = [
-            "id_league" => $body->id_league ?? 0,
-            "leagueAr" => $body->league_ar,
-            "leagueFr" => $body->league_fr,
-            "Cd_Reg" => $body->code_region,
+            "id_Entite" => $body->id_entite ?? 0,
+            "id_type_entite" => $body->id_type_entite,            
+            "cd_prov" => $body->code_province,
+            "entiteAr" => $body->entite_ar,
+            "entiteFr" => $body->entite_fr,
+            "Adresse" => $body->adresse,            
             "Actif" => $body->actif,
             "DateModification" => $body->date_modification
         ];
-        $id = $this->leagueRepo->insert($data);
+
+        $id = $this->entiteRepo->insert($data);
         if($id) {
-            $data['id_league'] = $id;
+            $data['id_Entite'] = $id;
             return $this->respondCreated($this->formatItem($data));
         }
         else 
@@ -79,17 +82,19 @@ class LeagueAPI extends ResourceController
         $body = $this->request->getJSON();        
 
         $data = [
-            "id_league" => $id,
-            "leagueAr" => $body->league_ar,
-            "leagueFr" => $body->league_fr,
-            "Cd_Reg" => $body->code_region,
+            "id_Entite" => $id,
+            "id_type_entite" => $body->id_type_entite,            
+            "cd_prov" => $body->code_province,
+            "entiteAr" => $body->entite_ar,
+            "entiteFr" => $body->entite_fr,
+            "Adresse" => $body->adresse,            
             "Actif" => $body->actif,
             "DateModification" => $body->date_modification
         ];
 
-        $success = $this->leagueRepo->update($id, $data);
+        $success = $this->entiteRepo->update($id, $data);
         if($success) {
-            $data['id_league'] = $id;
+            $data['id_Entite'] = $id;            
             return $this->respondUpdated($this->formatItem($data));
         }
         else 
@@ -98,64 +103,67 @@ class LeagueAPI extends ResourceController
     
     public function delete($id = null)
     {
-        $success = $this->leagueRepo->delete($id);
+        $success = $this->entiteRepo->delete($id);
         if($success) {
-            return $this->respondDeleted(array('id_league' => $id));
+            return $this->respondDeleted(array('id_entite' => $id));
         }
         else 
             return $this->respond($id, 400, 'something went wrong!');        
     }
     
-    private function formatItem($item) {  
-        return new class ($item){
-            public $id_league;
-            public $league_ar;
-            public $league_fr;
-            public $code_region;
+    private function formatItem($item) {
+        return new class($item) {
+            public $id_entite;
+            public $id_type_entite;
+            public $code_province;
+            public $entite_ar;
+            public $entite_fr;
+            public $adresse;
             public $actif;
             public $date_modification;
-            public function __construct($i) {
-                $this->id_league = $this->value_or_default("id_league", $i, "");
-                $this->league_ar = $this->value_or_default("LeagueAr", $i, "");
-                $this->league_fr = $this->value_or_default("LeagueFr", $i, "");
-                $this->code_region = $this->value_or_default("Cd_Reg", $i, "");
-                $this->actif = $this->value_or_default("Actif", $i, "");  
-                $this->date_modification = $this->value_or_default("DateModification", $i, "");                 
+            public function __construct($item){
+                $this->id_entite = $this->value_or_default("id_Entite", $item, "");            
+                $this->id_type_entite = $this->value_or_default("id_type_entite", $item, "");                            
+                $this->code_province = $this->value_or_default("cd_prov", $item, "");
+                $this->entite_ar = $this->value_or_default("EntiteAr", $item, "");
+                $this->entite_fr = $this->value_or_default("EntiteFr", $item, "");
+                $this->adresse = $this->value_or_default("Adresse", $item, "");            
+                $this->actif = $this->value_or_default("Actif", $item, "");
+                $this->date_modification = $this->value_or_default("DateModification", $item, "");
             }
             
             private function value_or_default($key, $item, $default){
                 return array_key_exists($key, $item) ? $item[$key] : $default;
-            }            
-        }; 
-                                                    
+            }
+        };    
     }
-        
+    
     private function getRules() {
         $rules = [
-            "id_league" => "required",
-            "league_ar" => "required|min_length[6]|max_length[50]",
-            "league_fr" => "required|min_length[6]|max_length[150]",
-            "code_region" => "required",  
+            "id_entite" => "required",            
+            "entite_ar" => "required|max_length[50]",
+            "entite_fr" => "required|max_length[150]",
+            "id_type_entite" => "required",  
             "actif" => "required",
             "date_modification" => "required"                      
         ];
 
         $messages = [
-            "id_league" => [
-                "required" => "id_league is required",
-                "min_length" => "id_league is not in format"
-            ],            
-            "league_ar" => [
-                "required" => "league_ar is required",
-                "min_length" => "league_ar is not in format"
+            "id_entite" => [
+                "required" => "id_entite is required",
+                "min_length" => "id_entite is not in format"
+            ],                        
+            "entite_ar" => [
+                "required" => "entite_ar is required",
+                "min_length" => "entite_ar is not in format"
             ],
-            "league_fr" => [
-                "required" => "league_fr is required",
-                "min_length" => "league_fr is not in format"
+            "entite_fr" => [
+                "required" => "entite_fr is required",
+                "min_length" => "entite_fr is not in format"
             ],
-            "code_region" => [
-                "required" => "code_region is required",
-                "min_length" => "code_region is not in format"
+            "id_type_entite" => [
+                "required" => "id_type_entite is required",
+                "min_length" => "id_type_entite is not in format"
             ],
             "actif" => [
                 "required" => "actif is required",

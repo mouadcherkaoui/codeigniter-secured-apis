@@ -4,22 +4,27 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class League extends Model
+class Personne extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'R_League';
-    protected $primaryKey       = 'id_leagues';
+    protected $table            = 'Personne';
+    protected $primaryKey       = 'id_personne';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        "id_league",
-        "leagueAr",
-        "leagueFr",
-        "Cd_Reg",
-        "Actif",
+        "id_personne",
+        "Num_Pass",
+        "NomAr",
+        "NomFr",
+        "PrenomAr",
+        "PrenomFr",
+        "Date_naiss",
+        "CIN",
+        "Genre",
+        "photo",            
         "DateModification"
     ];
 

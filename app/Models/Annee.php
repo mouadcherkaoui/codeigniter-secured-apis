@@ -4,23 +4,19 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class League extends Model
+class Annee extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'R_League';
-    protected $primaryKey       = 'id_leagues';
-    protected $useAutoIncrement = true;
+    protected $table            = 'R_Annee';
+    protected $primaryKey       = 'id_Annee';
+    protected $useAutoIncrement = false;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        "id_league",
-        "leagueAr",
-        "leagueFr",
-        "Cd_Reg",
-        "Actif",
-        "DateModification"
+        "id_Annee",
+        "Annee"
     ];
 
     // Dates

@@ -74,7 +74,7 @@ class UserController extends ResourceController
 
     private function getKey()
     {
-        return "my_application_secret";
+        return getenv('JWT_AUTH_SECRET_KEY');
     }
 
     public function login()
@@ -129,7 +129,7 @@ class UserController extends ResourceController
                         "data" => $userdata,
                     );
 
-                    $token = JWT::encode($payload, $key);
+                    $token = JWT::encode($payload, $key, 'HS256');
 
                     $response = [
                         'status' => 200,

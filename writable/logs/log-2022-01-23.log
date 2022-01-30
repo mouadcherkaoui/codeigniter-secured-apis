@@ -21,3 +21,47 @@ CRITICAL - 2022-01-23 02:39:33 --> Undefined property: stdClass::$name
 #4 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\MouadCherkaoui\source\repos\codeigniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
 #6 {main}
+CRITICAL - 2022-01-23 19:49:22 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(16): App\Entities\RegionEntity->sanitize_properties()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(59): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-23 19:51:18 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Entities\RegionEntity.php(16): App\Entities\RegionEntity->sanitize_properties()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(59): App\Entities\RegionEntity->validate()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-01-23 19:51:49 --> Call to protected method CodeIgniter\Controller::validate() from scope App\Entities\RegionEntity
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(59): App\Entities\RegionEntity->validate()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-01-23 19:57:38 --> Call to undefined method App\Controllers\RegionAPI::isValid()
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(65): App\Entities\RegionEntity->validate()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-01-23 19:59:34 --> Call to undefined method App\Controllers\RegionAPI::isValid()
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(65): App\Entities\RegionEntity->validate()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(828): App\Controllers\RegionAPI->update()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(415): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(323): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
