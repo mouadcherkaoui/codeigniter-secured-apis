@@ -9,14 +9,14 @@ class Annee extends Model
     protected $DBGroup          = 'default';
     protected $table            = 'R_Annee';
     protected $primaryKey       = 'id_Annee';
-    protected $useAutoIncrement = false;
+    protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        "id_Annee",
-        "Annee"
+        "id_annee",
+        "annee"
     ];
 
     // Dates

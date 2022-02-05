@@ -16,10 +16,10 @@ class TypeEntite extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
             "id_Type_Entite",
-            "Type_EntiteAr",
-            "Type_EntiteFr",
-            "Actif",          
-            "DateModification"        
+            "type_entite_Ar",
+            "type_entite_Fr",
+            "actif",          
+            "date_modification"        
     ];
 
     // Dates

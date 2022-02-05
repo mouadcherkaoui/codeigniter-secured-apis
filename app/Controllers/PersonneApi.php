@@ -51,16 +51,16 @@ class PersonneAPI extends ResourceController
 
         $data = [
             "id_personne" => $body->id_personne,
-            "Num_Pass" => $body->num_pass,
-            "NomAr" => $body->nom_ar,
-            "NomFr" => $body->nom_fr,
-            "PrenomAr" => $body->prenom_ar,
-            "PrenomFr" => $body->prenom_fr,
-            "Date_naiss" => $body->date_naiss,
-            "CIN" => $body->cin,
-            "Genre" => $body->genre,
+            "num_pass" => $body->num_pass,
+            "nom_ar" => $body->nom_ar,
+            "nom_fr" => $body->nom_fr,
+            "prenom_ar" => $body->prenom_ar,
+            "prenom_fr" => $body->prenom_fr,
+            "date_naissance" => $body->date_naissance,
+            "cin" => $body->cin,
+            "genre" => $body->genre,
             "photo" => $body->photo,            
-            "DataModification" => $body->data_modification
+            "date_modification" => $body->date_modification
         ];
         
         $id = $this->personneRepo->insert($data);
@@ -85,17 +85,17 @@ class PersonneAPI extends ResourceController
         $body = $this->request->getJSON();        
 
         $data = [
-            "id_personne" => $body->id_personne,
-            "Num_Pass" => $body->num_pass,
-            "NomAr" => $body->nom_ar,
-            "NomFr" => $body->nom_fr,
-            "PrenomAr" => $body->prenom_ar,
-            "PrenomFr" => $body->prenom_fr,
-            "Date_naiss" => $body->date_naiss,
-            "CIN" => $body->cin,
-            "Genre" => $body->genre,
+            "id_personne" => $id,
+            "num_pass" => $body->num_pass,
+            "nom_ar" => $body->nom_ar,
+            "nom_fr" => $body->nom_fr,
+            "prenom_ar" => $body->prenom_ar,
+            "prenom_fr" => $body->prenom_fr,
+            "date_naissance" => $body->date_naissance,
+            "cin" => $body->cin,
+            "genre" => $body->genre,
             "photo" => $body->photo,            
-            "DataModification" => $body->data_modification
+            "date_modification" => $body->date_modification
         ];
 
         $success = $this->personneRepo->update($id, $data);
@@ -158,11 +158,11 @@ class PersonneAPI extends ResourceController
             "prenom_ar" => "required|min_length[4]|max_length[50]",            
             "prenom_fr" => "required|min_length[4]|max_length[50]",
             "num_pass" => "required",  
-            "date_naiss" => "required",
+            "date_naissance" => "required",
             "cin" => "required",  
             "genre" => "required",            
             "photo" => "required",                        
-            "data_modification" => "required"                      
+            "date_modification" => "required"                      
         ];
 
         $messages = [
@@ -190,9 +190,9 @@ class PersonneAPI extends ResourceController
                 "required" => "num_pass is required",
                 "min_length" => "num_pass is not in format"
             ],
-            "date_naiss" => [
-                "required" => "date_naiss is required",
-                "min_length" => "date_naiss is not in format"
+            "date_naissance" => [
+                "required" => "date_naissance is required",
+                "min_length" => "date_naissance is not in format"
             ],
             "cin" => [
                 "required" => "cin is required",
@@ -206,9 +206,9 @@ class PersonneAPI extends ResourceController
                 "required" => "photo is required",
                 "min_length" => "photo is not in format"
             ],                             
-            "data_modification" => [
-                "required" => "data_modification is required",
-                "min_length" => "data_modification is not in format"
+            "date_modification" => [
+                "required" => "date_modification is required",
+                "min_length" => "date_modification is not in format"
             ]                
         ];
 

@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Grade extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'R_GRADE';
+    protected $table            = 'R_Grade';
     protected $primaryKey       = 'id_grade';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
@@ -16,10 +16,10 @@ class Grade extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         "id_grade",
-        "GradeAr",
-        "GradeFr",
-        "Actif",          
-        "DateModification"
+        "grade_ar",
+        "grade_fr",
+        "actif",          
+        "date_modification"
     ];
 
     // Dates

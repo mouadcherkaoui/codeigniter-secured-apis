@@ -48,13 +48,13 @@ class AnneeAPI extends ResourceController
         $body = $this->request->getJSON();
 
         $data = [
-            "id_Annee" => $body->id_annee,
-            "Annee" => $body->annee,
+            "id_annee" => $body->id_annee,
+            "annee" => $body->annee,
         ];
         
         $id = $this->anneeRepo->insert($data);
         if($id) {
-            $data['id_Annee'] = $id;
+            $data['id_annee'] = $id;
             return $this->respondCreated($this->formatItem($data));
         }
         else 
@@ -71,13 +71,13 @@ class AnneeAPI extends ResourceController
         $body = $this->request->getJSON();        
         
         $data = [
-            'id_Annee' => $body->id_annee,
-            "Annee" => $body->annee,
+            'id_annee' => $body->id_annee,
+            "annee" => $body->annee,
         ];
 
         $success = $this->anneeRepo->update($id, $data);
         if($success) {
-            $data['id_Annee'] = $id;
+            $data['id_annee'] = $id;
             return $this->respondUpdated($this->formatItem($data));
         }
         else 
@@ -99,8 +99,8 @@ class AnneeAPI extends ResourceController
             public $id_annee;
             public $annee;
             public function __construct($item){
-                $this->id_annee = $this->value_or_default("id_Annee", $item, "");
-                $this->annee = $this->value_or_default("Annee", $item, "");                
+                $this->id_annee = $this->value_or_default("id_annee", $item, "");
+                $this->annee = $this->value_or_default("annee", $item, "");                
             }
             
             private function value_or_default($key, $item, $default) {

@@ -29,7 +29,7 @@ class ProvinceAPI extends ResourceController
 
     public function show($id = null)
     {
-        $result = $this->provinceRepo->where('CD_REG', $id)->first();
+        $result = $this->provinceRepo->where('code_province', $id)->first();
         if($result != null){
             $resultToReturn = $this->formatItem($result);
             return $this->respond($resultToReturn, 200);            
@@ -52,17 +52,17 @@ class ProvinceAPI extends ResourceController
         $body = $this->request->getJSON();
 
         $data = [
-            'CD_PROV' => $body->code_province,
-            'CD_REG' => $body->code_region,            
-            "LL_PROV" => $body->ll_province,
-            "LA_PROV" => $body->la_province,
-            "Actif" => $body->actif,
-            "DateModification" => $body->date_modification
+            'code_province' => $body->code_province,
+            'code_region' => $body->code_region,            
+            "ll_province" => $body->ll_province,
+            "la_province" => $body->la_province,
+            "actif" => $body->actif,
+            "date_modification" => $body->date_modification
         ];
         
         $id = $this->provinceRepo->insert($data);
         if($id) {
-            $data['CD_REG'] = $id;
+            $data['code_region'] = $id;
             return $this->respondCreated($this->formatItem($data));
         }
         else 
@@ -82,17 +82,17 @@ class ProvinceAPI extends ResourceController
         $body = $this->request->getJSON();        
 
         $data = [
-            'CD_PROV' => $body->code_province,
-            'CD_REG' => $body->code_region,            
-            "LL_PROV" => $body->ll_province,
-            "LA_PROV" => $body->la_province,
-            "Actif" => $body->actif,
-            "DateModification" => $body->date_modification
+            'code_province' => $body->code_province,
+            'code_region' => $body->code_region,            
+            "ll_province" => $body->ll_province,
+            "la_province" => $body->la_province,
+            "actif" => $body->actif,
+            "date_modification" => $body->date_modification
         ];
 
         $success = $this->provinceRepo->update($id, $data);
         if($success) {
-            $data['CD_REG'] = $id;
+            $data['code_province'] = $id;
             return $this->respondUpdated($this->formatItem($data));
         }
         else 
@@ -118,12 +118,12 @@ class ProvinceAPI extends ResourceController
             public $actif;
             public $date_modification;
             public function __construct($item){
-                $this->code_province = $this->value_or_default("CD_PROV", $item, "");      
-                $this->code_region = $this->value_or_default("CR_REG", $item, "");                      
-                $this->ll_province = $this->value_or_default("LL_PROV", $item, "");            
-                $this->la_province = $this->value_or_default("LA_PROV", $item, "");                            
-                $this->actif = $this->value_or_default("Actif", $item, "");
-                $this->date_modification = $this->value_or_default("DateModification", $item, "");
+                $this->code_province = $this->value_or_default("code_province", $item, "");      
+                $this->code_region = $this->value_or_default("code_region", $item, "");                      
+                $this->ll_province = $this->value_or_default("ll_province", $item, "");            
+                $this->la_province = $this->value_or_default("la_province", $item, "");                            
+                $this->actif = $this->value_or_default("actif", $item, "");
+                $this->date_modification = $this->value_or_default("date_modification", $item, "");
             }
             
             private function value_or_default($key, $item, $default){

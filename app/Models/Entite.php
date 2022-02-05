@@ -16,13 +16,13 @@ class Entite extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         "id_type_entite",            
-        "Cd_Reg",
-        "cd_prov",
-        "entiteAr",
-        "entiteFr",
-        "Adresse",            
-        "Actif",
-        "DateModification"
+        "code_region",
+        "code_province",
+        "entite_ar",
+        "entite_fr",
+        "adresse",            
+        "actif",
+        "date_modification"
     ];
 
     // Dates

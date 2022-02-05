@@ -16,10 +16,10 @@ class TypeActivite extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         "id_Type_Activite",
-        "ActiviteAr",
-        "ActiviteFr",
-        "Actif",          
-        "DateModification"
+        "type_activite_ar",
+        "type_activite_fr",
+        "actif",          
+        "date_modification"
     ];
 
     // Dates

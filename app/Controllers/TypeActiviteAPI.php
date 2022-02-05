@@ -39,16 +39,16 @@ class TypeActiviteAPI extends ResourceController
         $body = $this->request->getJSON();
 
         $data = [
-            "id_Type_Activite" => 0,
-            "ActiviteAr" => $body->ActiviteAr,
-            "ActiviteFr" => $body->ActiviteFr,
-            "Actif" => $body->Actif,          
-            "DateModification" => $body->DateModification
+            "id_type_activite" => 0,
+            "type_activite_ar" => $body->type_activite_ar,
+            "type_activite_fr" => $body->type_activite_fr,
+            "actif" => $body->actif,          
+            "date_modification" => $body->date_modification
         ];
         
         $id = $this->TypeActiviteRepo->insert($data);
         if($id) {
-            $data['id_Type_Activite'] = $id;
+            $data['id_type_activite'] = $id;
             return $this->respondCreated($data);
         }
         else 
@@ -69,15 +69,15 @@ class TypeActiviteAPI extends ResourceController
 
         $data = [
             "id_Type_Activite" => 0,
-            "ActiviteAr" => $body->ActiviteAr,
-            "ActiviteFr" => $body->ActiviteFr,
-            "Actif" => $body->Actif,          
-            "DateModification" => $body->DateModification
+            "type_activite_ar" => $body->type_activite_ar,
+            "type_activite_fr" => $body->type_activite_fr,
+            "actif" => $body->actif,          
+            "date_modification" => $body->date_modification
         ];
 
         $success = $this->TypeActiviteRepo->update($id, $data);
         if($success) {
-            $data['id_Type_Activite'] = $id;
+            $data['id_type_activite'] = $id;
             return $this->respondUpdated($data);
         }
         else 
@@ -88,7 +88,7 @@ class TypeActiviteAPI extends ResourceController
     {
         $success = $this->TypeActiviteRepo->delete($id);
         if($success) {
-            $data['id_Type_Activite'] = $id;
+            $data['id_type_activite'] = $id;
             return $this->respondDeleted($data);
         }
         else 
@@ -96,28 +96,28 @@ class TypeActiviteAPI extends ResourceController
     }
     private function getRules() {
         $rules = [
-            "ActiviteAr" => "required|min_length[6]|max_length[50]",
-            "ActiviteFr" => "required|min_length[6]|max_length[50]",          
-            "Actif" => "required",                        
-            "DateModification" => "required"                      
+            "type_activite_ar" => "required|min_length[6]|max_length[50]",
+            "type_activite_fr" => "required|min_length[6]|max_length[50]",          
+            "actif" => "required",                        
+            "date_modification" => "required"                      
         ];
 
         $messages = [
-            "ActiviteAr" => [
-                "required" => "ActiviteAr is required",
-                "min_length" => "ActiviteAr is not in format"
+            "type_activite_ar" => [
+                "required" => "type_activite_ar is required",
+                "min_length" => "type_activite_ar is not in format"
             ],
-            "ActiviteFr" => [
-                "required" => "ActiviteFr is required",
-                "min_length" => "ActiviteFr is not in format"
+            "type_activite_fr" => [
+                "required" => "type_activite_fr is required",
+                "min_length" => "type_activite_fr is not in format"
             ],
-            "Actif" => [
-                "required" => "Actif is required",
-                "min_length" => "Actif is not in format"
+            "actif" => [
+                "required" => "actif is required",
+                "min_length" => "actif is not in format"
             ],                           
-            "DateModification" => [
-                "required" => "DateModification is required",
-                "min_length" => "DateModification is not in format"
+            "date_modification" => [
+                "required" => "date_modification is required",
+                "min_length" => "date_modification is not in format"
             ]                
         ];
 

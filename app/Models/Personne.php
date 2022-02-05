@@ -16,16 +16,16 @@ class Personne extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         "id_personne",
-        "Num_Pass",
-        "NomAr",
-        "NomFr",
-        "PrenomAr",
-        "PrenomFr",
-        "Date_naiss",
-        "CIN",
-        "Genre",
+        "num_pass",
+        "nom_ar",
+        "nom_fr",
+        "prenom_ar",
+        "prenom_fr",
+        "date_naissance",
+        "cin",
+        "genre",
         "photo",            
-        "DateModification"
+        "date_modification"
     ];
 
     // Dates

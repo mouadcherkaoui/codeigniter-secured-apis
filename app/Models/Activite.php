@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Activite extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'R_Activite';
+    protected $table            = 'activite';
     protected $primaryKey       = 'id_activite';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
@@ -17,11 +17,11 @@ class Activite extends Model
     protected $allowedFields    = [
         "id_activite",
         "id_type_activite",
-        "id_Personne",
-        "id_Entite",
-        "id_Annee",
-        "Date_Debut",
-        "Date_Fin"
+        "id_personne",
+        "id_entite",
+        "id_annee",
+        "date_debut",
+        "date_fin"
     ];
 
     // Dates

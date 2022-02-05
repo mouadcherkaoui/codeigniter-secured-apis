@@ -1,0 +1,183 @@
+CRITICAL - 2022-02-05 02:20:30 --> Access level to chriskacerguis\RestServer\RestController::$format must be protected (as in class CodeIgniter\RESTful\ResourceController) or weaker
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-05 02:21:57 --> Access level to chriskacerguis\RestServer\RestController::$format must be protected (as in class CodeIgniter\RESTful\ResourceController) or weaker
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-05 02:22:41 --> Cannot call constructor
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ActiviteAPI.php(15): chriskacerguis\RestServer\RestController->__construct()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\ActiviteAPI->__construct()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-02-05 02:22:56 --> Undefined property: App\Controllers\ActiviteAPI::$config
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\chriskacerguis\codeigniter-restserver\src\RestController.php(477): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): chriskacerguis\RestServer\RestController->__destruct()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#4 {main}
+CRITICAL - 2022-02-05 02:23:38 --> Cannot call constructor
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ActiviteAPI.php(13): chriskacerguis\RestServer\RestController->__construct()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\ActiviteAPI->__construct()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-02-05 02:25:15 --> Cannot call constructor
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ActiviteAPI.php(13): chriskacerguis\RestServer\RestController->__construct()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\ActiviteAPI->__construct()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-02-05 02:25:24 --> Undefined property: App\Controllers\ActiviteAPI::$config
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\chriskacerguis\codeigniter-restserver\src\RestController.php(477): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): chriskacerguis\RestServer\RestController->__destruct()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#4 {main}
+CRITICAL - 2022-02-05 02:26:39 --> Undefined property: App\Controllers\ActiviteAPI::$config
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\chriskacerguis\codeigniter-restserver\src\RestController.php(477): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): chriskacerguis\RestServer\RestController->__destruct()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#4 {main}
+ERROR - 2022-02-05 02:26:49 --> Table 'codeigniter4_app.r_activite' doesn't exist
+CRITICAL - 2022-02-05 02:26:49 --> Table 'codeigniter4_app.r_activite' doesn't exist
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ActiviteAPI.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ActiviteAPI->index()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#12 {main}
+ERROR - 2022-02-05 02:27:17 --> Table 'codeigniter4_app.r_activites' doesn't exist
+CRITICAL - 2022-02-05 02:27:17 --> Table 'codeigniter4_app.r_activites' doesn't exist
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ActiviteAPI.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ActiviteAPI->index()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#12 {main}
+ERROR - 2022-02-05 05:48:16 --> Table 'codeigniter4_app.r_activites' doesn't exist
+CRITICAL - 2022-02-05 05:48:16 --> Table 'codeigniter4_app.r_activites' doesn't exist
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ActiviteAPI.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ActiviteAPI->index()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#12 {main}
+ERROR - 2022-02-05 05:49:33 --> Table 'codeigniter4_app.activites' doesn't exist
+CRITICAL - 2022-02-05 05:49:33 --> Table 'codeigniter4_app.activites' doesn't exist
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ActiviteAPI.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ActiviteAPI->index()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#12 {main}
+ERROR - 2022-02-05 05:49:42 --> Table 'codeigniter4_app.activite' doesn't exist
+CRITICAL - 2022-02-05 05:49:42 --> Table 'codeigniter4_app.activite' doesn't exist
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ActiviteAPI.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ActiviteAPI->index()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#12 {main}
+ERROR - 2022-02-05 09:58:35 --> Table 'frmw_db.r_region' doesn't exist
+CRITICAL - 2022-02-05 09:58:35 --> Table 'frmw_db.r_region' doesn't exist
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\RegionAPI.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\RegionAPI->index()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#12 {main}
+ERROR - 2022-02-05 10:00:13 --> Table 'frmwdb.province' doesn't exist
+CRITICAL - 2022-02-05 10:00:13 --> Table 'frmwdb.province' doesn't exist
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ProvinceAPI.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ProvinceAPI->index()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#12 {main}
+ERROR - 2022-02-05 10:01:05 --> Unknown column 'CD_REG' in 'where clause'
+CRITICAL - 2022-02-05 10:01:05 --> Unknown column 'CD_REG' in 'where clause'
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ProvinceAPI.php(32): CodeIgniter\BaseModel->first()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ProvinceAPI->show()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#12 {main}
+ERROR - 2022-02-05 10:01:50 --> Unknown column 'CD_REG' in 'where clause'
+CRITICAL - 2022-02-05 10:01:50 --> Unknown column 'CD_REG' in 'where clause'
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\app\Controllers\ProvinceAPI.php(32): CodeIgniter\BaseModel->first()
+#7 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\ProvinceAPI->show()
+#8 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#12 {main}

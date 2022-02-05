@@ -53,11 +53,11 @@ class ActiviteAPI extends ResourceController
         $data = [
             "id_activite" => $body->id_activite ?? 0,
             "id_type_activite" => $body->id_type_activite,
-            "id_Personne" => $body->id_personne,
-            "id_Entite" => $body->id_entite,
-            "id_Annee" => $body->id_annee,
-            "Date_Debut" => $body->date_debut,
-            "Date_Fin" => $body->date_fin,
+            "id_personne" => $body->id_personne,
+            "id_entite" => $body->id_entite,
+            "id_annee" => $body->id_annee,
+            "date_debut" => $body->date_debut,
+            "date_fin" => $body->date_fin,
         ];
 
         $id = $this->activiteRepo->insert($data);
@@ -121,13 +121,13 @@ class ActiviteAPI extends ResourceController
             public $date_debut;
             public $date_fin;
             public function __construct($item){
-                $this->id_activite = $this->value_or_default("id_Activite", $item, "");                                            
-                $this->id_type_activite = $this->value_or_default("id_type_Activite", $item, "");                            
-                $this->id_entite = $this->value_or_default("id_Entite", $item, "");            
-                $this->id_personne = $this->value_or_default("id_Personne", $item, "");
-                $this->id_annee = $this->value_or_default("id_Annee", $item, "");
-                $this->date_debut = $this->value_or_default("Date_Debut", $item, "");
-                $this->date_fin = $this->value_or_default("Date_Fin", $item, "");            
+                $this->id_activite = $this->value_or_default("id_activite", $item, "");                                            
+                $this->id_type_activite = $this->value_or_default("id_type_activite", $item, "");                            
+                $this->id_entite = $this->value_or_default("id_entite", $item, "");            
+                $this->id_personne = $this->value_or_default("id_personne", $item, "");
+                $this->id_annee = $this->value_or_default("id_annee", $item, "");
+                $this->date_debut = $this->value_or_default("date_debut", $item, "");
+                $this->date_fin = $this->value_or_default("date_fin", $item, "");            
             }
             
             private function value_or_default($key, $item, $default){

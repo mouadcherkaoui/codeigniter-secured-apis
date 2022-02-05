@@ -16,11 +16,11 @@ class League extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         "id_league",
-        "leagueAr",
-        "leagueFr",
-        "Cd_Reg",
-        "Actif",
-        "DateModification"
+        "league_ar",
+        "league_fr",
+        "code_region",
+        "actif",
+        "date_modification"
     ];
 
     // Dates

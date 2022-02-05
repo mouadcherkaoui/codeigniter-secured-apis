@@ -38,10 +38,10 @@ class GradeAPI extends ResourceController
 
         $data = [
             "id_grade" => 0,
-            "GradeAr" => $body->GradeAr,
-            "GradeFr" => $body->GradeFr,
-            "Actif" => $body->Actif,          
-            "DateModification" => $body->DateModification
+            "grade_ar" => $body->GradeAr,
+            "grade_fr" => $body->GradeFr,
+            "actif" => $body->Actif,          
+            "date_modification" => $body->DateModification
         ];
         
         $id = $this->gradeRepo->insert($data);
@@ -64,10 +64,10 @@ class GradeAPI extends ResourceController
 
         $data = [
             "id_grade" => 0,
-            "GradeAr" => $body->GradeAr,
-            "GradeFr" => $body->GradeFr,
-            "Actif" => $body->Actif,          
-            "DateModification" => $body->DateModification
+            "grade_ar" => $body->grade_ar,
+            "grade_fr" => $body->grade_fr,
+            "actif" => $body->Actif,          
+            "date_modification" => $body->date_modification
         ];
 
         $success = $this->gradeRepo->update($id, $data);
@@ -91,28 +91,28 @@ class GradeAPI extends ResourceController
     }
     private function getRules() {
         $rules = [
-            "GradeAr" => "required|min_length[6]|max_length[50]",
-            "GradeFr" => "required|min_length[6]|max_length[50]",          
-            "Actif" => "required",                        
-            "DateModification" => "required"                      
+            "grade_ar" => "required|min_length[6]|max_length[50]",
+            "grade_fr" => "required|min_length[6]|max_length[50]",          
+            "actif" => "required",                        
+            "date_modification" => "required"                      
         ];
 
         $messages = [
-            "GradeAr" => [
-                "required" => "GradeAr is required",
-                "min_length" => "GradeAr is not in format"
+            "grade_ar" => [
+                "required" => "grade_ar is required",
+                "min_length" => "grade_ar is not in format"
             ],
-            "GradeFr" => [
-                "required" => "GradeFr is required",
-                "min_length" => "GradeFr is not in format"
+            "grade_fr" => [
+                "required" => "grade_fr is required",
+                "min_length" => "grade_fr is not in format"
             ],
-            "Actif" => [
-                "required" => "Actif is required",
-                "min_length" => "Actif is not in format"
+            "actif" => [
+                "required" => "actif is required",
+                "min_length" => "actif is not in format"
             ],                           
-            "DateModification" => [
-                "required" => "DateModification is required",
-                "min_length" => "DateModification is not in format"
+            "date_modification" => [
+                "required" => "date_modification is required",
+                "min_length" => "date_modification is not in format"
             ]                
         ];
 

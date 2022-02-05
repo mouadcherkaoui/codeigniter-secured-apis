@@ -7,20 +7,20 @@ use CodeIgniter\Model;
 class Province extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'prdvs';
-    protected $primaryKey       = 'id';
-    protected $useAutoIncrement = true;
+    protected $table            = 'r_province';
+    protected $primaryKey       = 'code_province';
+    protected $useAutoIncrement = false;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'CD_PROV',
-        'CD_REG',            
-        "LL_PROV",
-        "LA_PROV",
-        "Actif",
-        "DateModification"
+        'code_province',
+        'code_region',            
+        "ll_province",
+        "la_province",
+        "actif",
+        "date_modification"
     ];
 
     // Dates

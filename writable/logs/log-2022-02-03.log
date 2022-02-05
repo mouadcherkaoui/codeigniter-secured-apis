@@ -1,0 +1,10 @@
+CRITICAL - 2022-02-03 12:25:56 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(28): require('...')
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#3 {main}
+CRITICAL - 2022-02-03 12:35:36 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\public\index.php(28): require('...')
+#2 C:\Users\MouadCherkaoui\source\repos\codeigniter-secured-apis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('...')
+#3 {main}

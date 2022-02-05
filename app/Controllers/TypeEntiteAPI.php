@@ -26,7 +26,7 @@ class TypeEntiteAPI extends ResourceController
 
     public function show($id = null)
     {
-        $result = $this->Type_EntiteRepo->where('id_Type_Entite', $id)->first();
+        $result = $this->Type_EntiteRepo->where('id_type_entite', $id)->first();
         return $this->respond($result, 200);
     }
 
@@ -43,16 +43,16 @@ class TypeEntiteAPI extends ResourceController
         $body = $this->request->getJSON();
 
         $data = [
-            "id_Type_Entite" => 0,
-            "Type_EntiteAr" => $body->type_entite_ar,
-            "Type_EntiteFr" => $body->type_entite_fr,
-            "Actif" => $body->actif,          
-            "DateModification" => $body->date_modification
+            "id_type_entite" => 0,
+            "type_entite_ar" => $body->type_entite_ar,
+            "type_entite_fr" => $body->type_entite_fr,
+            "actif" => $body->actif,          
+            "date_modification" => $body->date_modification
         ];
         
         $id = $this->Type_EntiteRepo->insert($data);
         if($id) {
-            $data['id_Type_Entite'] = $id;
+            $data['id_type_entite'] = $id;
             return $this->respondCreated($data);
         }
         else 
@@ -72,11 +72,11 @@ class TypeEntiteAPI extends ResourceController
         $body = $this->request->getJSON();        
 
         $data = [
-            "id_Type_Entite" => $id,
-            "Type_EntiteAr" => $body->type_entite_ar,
-            "Type_EntiteFr" => $body->type_entite_fr,
-            "Actif" => $body->actif,          
-            "DateModification" => $body->date_modification
+            "id_type_entite" => $id,
+            "type_entite_ar" => $body->type_entite_ar,
+            "type_entite_fr" => $body->type_entite_fr,
+            "actif" => $body->actif,          
+            "date_modification" => $body->date_modification
         ];
 
         $success = $this->Type_EntiteRepo->update($id, $data);
@@ -92,7 +92,7 @@ class TypeEntiteAPI extends ResourceController
     {
         $success = $this->Type_EntiteRepo->delete($id);
         if($success) {
-            $data['id_Type_Entite'] = $id;
+            $data['id_type_entite'] = $id;
             return $this->respondDeleted($data);
         }
         else 
@@ -107,11 +107,11 @@ class TypeEntiteAPI extends ResourceController
             public $actif;
             public $date_modification;
             public function __construct($item) {
-                $this->id_type_entite = $this->value_or_default("id_Type_Entite", $item, "");
-                $this->type_entite_ar = $this->value_or_default("Type_EntiteAr", $item, "");
-                $this->type_entite_fr = $this->value_or_default("Type_EntiteFr", $item, "");
-                $this->actif = $this->value_or_default("Actif", $item, "");
-                $this->date_modification = $this->value_or_default("DateModification", $item, "");
+                $this->id_type_entite = $this->value_or_default("id_type_entite", $item, "");
+                $this->type_entite_ar = $this->value_or_default("type_entite_ar", $item, "");
+                $this->type_entite_fr = $this->value_or_default("type_entite_fr", $item, "");
+                $this->actif = $this->value_or_default("actif", $item, "");
+                $this->date_modification = $this->value_or_default("date_modification", $item, "");
             }
             
             private function value_or_default($key, $item, $default){

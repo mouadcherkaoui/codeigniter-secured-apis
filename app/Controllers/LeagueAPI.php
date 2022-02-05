@@ -80,11 +80,11 @@ class LeagueAPI extends ResourceController
 
         $data = [
             "id_league" => $id,
-            "leagueAr" => $body->league_ar,
-            "leagueFr" => $body->league_fr,
-            "Cd_Reg" => $body->code_region,
-            "Actif" => $body->actif,
-            "DateModification" => $body->date_modification
+            "league_ar" => $body->league_ar,
+            "league_fr" => $body->league_fr,
+            "code_region" => $body->code_region,
+            "actif" => $body->actif,
+            "date_modification" => $body->date_modification
         ];
 
         $success = $this->leagueRepo->update($id, $data);
@@ -116,11 +116,11 @@ class LeagueAPI extends ResourceController
             public $date_modification;
             public function __construct($i) {
                 $this->id_league = $this->value_or_default("id_league", $i, "");
-                $this->league_ar = $this->value_or_default("LeagueAr", $i, "");
-                $this->league_fr = $this->value_or_default("LeagueFr", $i, "");
-                $this->code_region = $this->value_or_default("Cd_Reg", $i, "");
-                $this->actif = $this->value_or_default("Actif", $i, "");  
-                $this->date_modification = $this->value_or_default("DateModification", $i, "");                 
+                $this->league_ar = $this->value_or_default("league_ar", $i, "");
+                $this->league_fr = $this->value_or_default("league_fr", $i, "");
+                $this->code_region = $this->value_or_default("code_regino", $i, "");
+                $this->actif = $this->value_or_default("actif", $i, "");  
+                $this->date_modification = $this->value_or_default("date_modification", $i, "");                 
             }
             
             private function value_or_default($key, $item, $default){

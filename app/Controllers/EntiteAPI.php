@@ -85,11 +85,11 @@ class EntiteAPI extends ResourceController
             "id_Entite" => $id,
             "id_type_entite" => $body->id_type_entite,            
             "cd_prov" => $body->code_province,
-            "entiteAr" => $body->entite_ar,
-            "entiteFr" => $body->entite_fr,
-            "Adresse" => $body->adresse,            
-            "Actif" => $body->actif,
-            "DateModification" => $body->date_modification
+            "entite_ar" => $body->entite_ar,
+            "entite_fr" => $body->entite_fr,
+            "adresse" => $body->adresse,            
+            "actif" => $body->actif,
+            "date_modification" => $body->date_modification
         ];
 
         $success = $this->entiteRepo->update($id, $data);
@@ -122,14 +122,14 @@ class EntiteAPI extends ResourceController
             public $actif;
             public $date_modification;
             public function __construct($item){
-                $this->id_entite = $this->value_or_default("id_Entite", $item, "");            
+                $this->id_entite = $this->value_or_default("id_entite", $item, "");            
                 $this->id_type_entite = $this->value_or_default("id_type_entite", $item, "");                            
-                $this->code_province = $this->value_or_default("cd_prov", $item, "");
-                $this->entite_ar = $this->value_or_default("EntiteAr", $item, "");
-                $this->entite_fr = $this->value_or_default("EntiteFr", $item, "");
-                $this->adresse = $this->value_or_default("Adresse", $item, "");            
-                $this->actif = $this->value_or_default("Actif", $item, "");
-                $this->date_modification = $this->value_or_default("DateModification", $item, "");
+                $this->code_province = $this->value_or_default("code_province", $item, "");
+                $this->entite_ar = $this->value_or_default("entite_ar", $item, "");
+                $this->entite_fr = $this->value_or_default("entite_fr", $item, "");
+                $this->adresse = $this->value_or_default("adresse", $item, "");            
+                $this->actif = $this->value_or_default("actif", $item, "");
+                $this->date_modification = $this->value_or_default("date_modification", $item, "");
             }
             
             private function value_or_default($key, $item, $default){
