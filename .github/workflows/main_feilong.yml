@@ -18,5 +18,6 @@ jobs:
           **/.git*
           **/.git*/**
           **/node_modules/**
-          .vscode
-          .github        
+          **/.vscode/**
+          .vscode/**
+          .github/**        
