@@ -14,7 +14,6 @@ jobs:
         server: ftpupload.net
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        local-dir: codeigniter-secured-apis/
         server-dir: htdocs/
         exclude: |
           **/.git*
