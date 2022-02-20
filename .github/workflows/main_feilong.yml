@@ -8,10 +8,23 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
     
+    - name: Create env file
+      run: |
+        touch .env
+        echo CI_ENVIRONMENT = production >> .env
+        echo app.baseURL = 'http://feilong.infinityfreeapp.com/' >> .env
+        echo database.default.hostname = sql102.byetcluster.com >> .env
+        echo database.default.database = epiz_30989244_frmwdb >> .env
+        echo database.default.username = 30989244_4 >> .env
+        echo database.default.password = 2(L4S@p6nN >> .env
+        echo database.default.DBDriver = MySQLi >> .env
+        echo database.default.DBPrefix =   >> .env
+        cat .env
+  
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftpupload.net
+        server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir: htdocs/
@@ -20,5 +33,6 @@ jobs:
           **/.git*/**
           **/node_modules/**
           **/.vscode/**
+          .env
           .vscode/**
           .github/**        
