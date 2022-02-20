@@ -8,6 +8,12 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
     
+    - name: Install dependencies
+      uses: php-actions/composer@v6
+      with:
+        dev: no
+        args: --profile --ignore-platform-reqs
+
     - name: Create env file
       run: |
         touch .env
