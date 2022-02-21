@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-    
+
     - name: Install dependencies
       uses: php-actions/composer@v6
       with:
@@ -25,8 +25,8 @@ jobs:
         echo "database.default.password = 2(L4S@p6nN" >> .env
         echo "database.default.DBDriver = MySQLi" >> .env
         echo "database.default.DBPrefix = "  >> .env
+        echo "JWT_AUTH_SECRET_KEY=   'j7v.soxYVP#PJ(Gv8j<_(;)ueRN#NkPw0sN|i#@9$L_5rBK(w{$i;-<+N$0Y6G.C'" || .env
         cat .env
-  
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
